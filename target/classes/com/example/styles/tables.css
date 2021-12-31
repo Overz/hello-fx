@@ -1,0 +1,18 @@
+/*Cor do texto do header da tabela*/
+.table-view .column-header-background .nested-column-header .table-column .label .text {
+	-fx-fill: white;
+}
+
+/*Cor do background do header da tablea*/
+.table-view .column-header-background .nested-column-header .table-column {
+	-fx-background-color: #5252b7;
+}
+
+/*Cor da sortable arrow da tablea*/
+.table-view .arrow {
+	-fx-background-color: white;
+}
+
+.table-column {
+	-fx-alignment: center-left;
+}

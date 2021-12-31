@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="800.0"
+			prefWidth="1000.0" stylesheets="@../styles/content.css" xmlns="http://javafx.com/javafx/17"
+			xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.ContentController">
+
+	<padding>
+		<Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+	</padding>
+	<Label maxHeight="50.0" maxWidth="1.7976931348623157E308" text="Some title..."
+				 VBox.vgrow="ALWAYS">
+		<font>
+			<Font name="Ubuntu Bold" size="30.0"/>
+		</font>
+		<opaqueInsets>
+			<Insets/>
+		</opaqueInsets>
+		<VBox.margin>
+			<Insets bottom="50.0"/>
+		</VBox.margin>
+	</Label>
+	<HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="20.0">
+		<VBox.margin>
+			<Insets bottom="20.0"/>
+		</VBox.margin>
+		<TextField fx:id="txtSearch" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+							 promptText="Search for title..."
+							 HBox.hgrow="ALWAYS">
+			<font>
+				<Font name="Ubuntu" size="20.0"/>
+			</font>
+		</TextField>
+		<JFXButton fx:id="btnFilters" buttonType="RAISED" lineSpacing="20.0" maxHeight="1.7976931348623157E308"
+							 maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefWidth="200.0"
+							 text="Filters" textFill="WHITE">
+			<font>
+				<Font name="Ubuntu" size="20.0"/>
+			</font>
+			<graphic>
+				<ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+					<Image url="@../images/filters.png"/>
+				</ImageView>
+			</graphic>
+		</JFXButton>
+	</HBox>
+	<TableView fx:id="table" focusTraversable="false" maxHeight="1.7976931348623157E308"
+						 maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0"
+						 stylesheets="@../styles/tables.css" VBox.vgrow="ALWAYS">
+		<columnResizePolicy>
+			<TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+		</columnResizePolicy>
+	</TableView>
+</VBox>

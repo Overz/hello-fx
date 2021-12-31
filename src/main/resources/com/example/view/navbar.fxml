@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="776.0" prefWidth="421.0" stylesheets="@../styles/navbar.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.NavBarController">
+  <GridPane fx:id="grid" alignment="TOP_CENTER" VBox.vgrow="ALWAYS">
+	<columnConstraints>
+		<ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints maxHeight="150.0" minHeight="150.0" prefHeight="150.0" vgrow="ALWAYS" />
+		<RowConstraints maxHeight="50.0" minHeight="35.0" prefHeight="35.0" vgrow="ALWAYS" />
+		<RowConstraints maxHeight="50.0" minHeight="35.0" prefHeight="35.0" valignment="CENTER" vgrow="ALWAYS" />
+         <RowConstraints maxHeight="50.0" minHeight="35.0" prefHeight="35.0" valignment="CENTER" vgrow="ALWAYS" />
+		<RowConstraints maxHeight="1.7976931348623157E308" minHeight="35.0" prefHeight="35.0" valignment="BOTTOM" vgrow="ALWAYS" />
+	</rowConstraints>
+	<ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+	  <Image url="@../images/app.png" />
+	</ImageView>
+	<Label text="My Application" textFill="WHITE">
+	  <font>
+		  <Font name="Fira Code SemiBold" size="24.0" />
+	  </font>
+	  <GridPane.margin>
+		  <Insets top="150.0" />
+	  </GridPane.margin>
+	</Label>
+	<Separator maxWidth="300.0" prefWidth="300.0" GridPane.rowIndex="1" />
+	<JFXButton fx:id="btnScreenOne" buttonType="RAISED" lineSpacing="20.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#onAction" prefHeight="35.0" prefWidth="300.0" text="Screen 1" textFill="WHITE" GridPane.rowIndex="2">
+	  <font>
+		  <Font name="Ubuntu" size="20.0" />
+	  </font>
+	</JFXButton>
+	<JFXButton fx:id="btnHelp" buttonType="RAISED" contentDisplay="TOP" onAction="#onAction" prefHeight="35.0" prefWidth="300.0" text="Help" textFill="WHITE" GridPane.rowIndex="4">
+	  <font>
+		  <Font name="Ubuntu" size="20.0" />
+	  </font>
+	  <GridPane.margin>
+		  <Insets bottom="35.0" />
+	  </GridPane.margin>
+	</JFXButton>
+      <JFXButton fx:id="btnScreenTwo" buttonType="RAISED" lineSpacing="20.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#onAction" prefHeight="35.0" prefWidth="300.0" text="Screen 2" textFill="WHITE" GridPane.rowIndex="3">
+         <font>
+            <Font name="Ubuntu" size="20.0" />
+         </font>
+      </JFXButton>
+  </GridPane>
+</VBox>

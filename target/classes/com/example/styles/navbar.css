@@ -1,0 +1,17 @@
+@import "global.css";
+
+VBox {
+	-fx-background-color: #1E1B1BFF;
+}
+
+#navBar {
+	-fx-background-color: #1E1B1BFF;
+}
+
+#btnScreenOne {
+	-fx-background-color: #5252b7;
+}
+
+.button {
+	-fx-background-color: #4B4949FF;
+}
